@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="div-logo">
+            <img src="https://purepng.com/public/uploads/thumbnail//google-stadia-logo-hd4.png" alt="Logo"
+                id="header-img" width="50px" height="50px">
+            <h1>CoursesNow!</h1>
+        </a>
+        <nav id="nav-bar">
+            <a href="#section1" class="nav-link">Fundamentals</a>
+            <a href="#section2" class="nav-link">Front-end</a>
+            <a href="#section3" class="nav-link">Back-end</a>
+        </nav>
+    </header>
+
+    <section class="section-video">
+        <video id="video" autoplay loop>
+            <source
+                src="https://cdn.pixabay.com/vimeo/191636243/computadora-portatil-6378.mp4?width=640&hash=05af684d7807f88fcbfba290bcf9da4b65a28aac"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="section1" class="section-target target1">
+        <article>
+            <h2>Programming Fundamentals</h2>
+            <p>Learn the essential foundations of programming and algorithmic logic.</p>
+            <p>Price: $99</p>
+            <button>Enroll Now</button>
+        </article>
+
+        <img src="asset/image/analysis-isometric-56fac.svg" alt="image isometric">
+
+    </section>
+
+    <section id="section2" class="section-target target2">
+
+        <img src="asset/image/html-isometric.svg" alt="image isometric" class="img-float">
+
+        <article class="Frontend">
+            <h2>Front-end Development</h2>
+            <p>Learn to create page structures and apply styles.</p>
+            <p>Price: $59</p>
+            <button>Enroll Now</button>
+        </article>
+
+    </section>
+
+    <section id="section3" class="section-target target3">
+        <article class="Backend">
+            <h2>Back-end Development</h2>
+            <p>Learn to handle data on the server and work with databases.</p>
+            <p>Price: $89</p>
+            <button>Enroll Now</button>
+        </article>
+
+        <img src="asset/image/analysis-isometric-56fac.svg" alt="image isometric">
+
+    </section>
+
+    <footer>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <label for="question">Question</label>
+            <textarea name="question" id="question" cols="30" rows="10" placeholder="Enter your question"
+                required></textarea>
+            <input type="submit" id="submit" value="Submit" class="button">
+        </form>
+    </footer>
+
+</body>
+
+</html>
