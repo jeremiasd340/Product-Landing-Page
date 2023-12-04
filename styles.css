@@ -85,7 +85,7 @@ video {
 }
 
 .target2 {
-    justify-content: end;
+    justify-content: space-between;
 }
 
 .target3 {
@@ -223,7 +223,7 @@ form textarea {
     }
 }
 
-#section1 img {
+/* #section1 img {
     display: none;
 }
 
@@ -233,4 +233,4 @@ form textarea {
 
 #section3 img {
     display: none;
-}
+} */
