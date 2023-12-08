@@ -62,7 +62,6 @@ video {
 
 .section-target {
     background-color: white;
-    padding: 50px;
     text-align: center;
     height: 500px;
     display: flex;
@@ -141,10 +140,18 @@ article button::before {
     z-index: -1;
     transform: translateX(-100%);
     transition: all .3s;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
 }
 
 article button:hover::before {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
 
 footer {
@@ -169,6 +176,11 @@ form label {
     margin: 10px;
     color: rgba(46, 229, 157, 0.4);
     width: 50%;
+}
+
+form input:focus {
+    border: 2px solid rgba(46, 229, 157, 0.3);
+    box-shadow: 1px 1px 10px 1px rgba(46, 229, 157, 0.4);
 }
 
 form input {
@@ -196,6 +208,10 @@ form textarea {
     margin-bottom: 20px;
 }
 
+form textarea:focus {
+    box-shadow: 1px 1px 10px 1px rgba(46, 229, 157, 0.4);
+}
+
 .button {
     background-color: #23c483;
     color: black;
@@ -208,11 +224,51 @@ form textarea {
     background-color: #23c483;
     box-shadow: 1px 1px 20px 10px rgba(46, 229, 157, 0.4);
     color: #fff;
-    transform: translateY(-7px);
+    transform: translateX(-3px);
+    -webkit-transform: translateX(-3px);
+    -moz-transform: translateX(-3px);
+    -ms-transform: translateX(-3px);
+    -o-transform: translateX(-3px);
+}
+
+@media screen and (max-width:1000px) {
+    main {}
+
+    .section-video {
+        display: none;
+    }
+
+    #section1 img {
+        display: none;
+    }
+
+    #section2 img {
+        display: none;
+    }
+
+    #section3 img {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    }
+
+    .section-target {
+        padding: 0px;
+        background: transparent;
+    }
+
+    .section-target article {
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:768px) {
-
     video {
         object-fit: cover;
         object-position: center;
@@ -223,14 +279,34 @@ form textarea {
     }
 }
 
-/* #section1 img {
-    display: none;
+@media screen and (max-width:425px) {
+    form label {
+        width: 100%;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form textarea {
+        width: 100%;
+    }
+
+    main section {
+        width: 90%;
+    }
 }
 
-#section2 img {
-    display: none;
-}
+@media screen and (max-width:375px) {
+    form label {
+        width: 100%;
+    }
 
-#section3 img {
-    display: none;
-} */
+    form input {
+        width: 100%;
+    }
+
+    form textarea {
+        width: 100%;
+    }
+}
